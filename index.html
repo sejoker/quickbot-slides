@@ -45,6 +45,20 @@
             <img src="img/inventor_kit.jpg" alt="Arduino inventor kit">
           </section>
           <section>
+              <h3>ReadBoard Key features</h3>
+              <ul>
+                <li>Based on Arduino Uno</li>
+                <li>ATmega328 microcontroller</li>
+                <li>32k Flash Memory</li>
+                <li>16MHz Clock Speed</li>
+                <li>Input voltage - 7-15V</li>
+                <li>14 Digital I/O Pins (6 PWM outputs)</li>
+                <li>6 Analog Inputs</li>
+                <li>USB connection</li>
+              </ul>
+              <img style="position:absolute; margin-left: 60px;" src="img/redboard.jpg" alt="RedBoard">
+            </section>
+          <section>
             <h3>C++ Blink example</h3>
             <pre><code class="javascript">
         int ledPin =  13;    // LED connected to digital pin 13
@@ -68,6 +82,7 @@
         }
             </code></pre>
             </section>
+
             <section>
               <h3>JavaScript Blink example</h3>
               <pre><code class="javascript">
@@ -148,24 +163,8 @@
               <li>Control theory, linear algebra</li>
               <li>Different behaviors</li>
               <li>Real robot control</li>
+              <img src="img/quickbot.jpg" alt="QuickBot" style="position:absolute; margin-left: 500px">
             </ul>
-          </section>
-
-          <section>
-          <section>
-            <h3>Robot communication control</h3>
-            <img src="img/simiam.png" alt="Sim.I.Am">
-          </section>
-
-          <section>
-            <h3>Alternative simulator</h3>
-            <img src="img/pysimiam.png" alt="Pysimiam">
-          </section>
-
-          <section>
-            <h3>Pysimiam with Arduino</h3>
-            <img src="img/pysimiam_js.png" alt="Pysimiam wit Arduino">
-          </section>
           </section>
 
           <section>
@@ -221,8 +220,40 @@
 
           <section>
           <section>
+            <h3>Odometry</h3>
+            <ul>
+              <li>The state of the robot is (x, y, φ)</li>
+              <li style="font-weight:bold; font-style:italic">How do we obtain this state information?</li>
+              <li>Two possibilities:<ul>
+                    <li>External sensors</li>
+                    <li>Internal sensors
+                      <ul>
+                        <li>Orientation: Compass</li>
+                        <li>Position: Accelerometers, Gyroscopes</li>
+                        <li>Wheel Encoders</li>
+                      </ul>
+                    </li>
+                  </ul>
+              </li>
+            </ul>
+          </section>
+          <section>
+          <h3>Wheel Encoders</h3>
+          <ul>
+              <li>Wheel encoders give the distance moved by each wheel</li>
+              <li>Assume the wheels are following an arc (short time scale)
+              </li>
+          </ul>
+            <img src="img/wheel-encoders0.png" alt="Wheel Encoders">
+            <div class="text-right">&nbsp;*<font style="font-size: 20px;">Magnus Egerstedt,Control of Mobile Robots,Georgia Institute of Technology</font>
+          </section>
+          <section>
+            <h3>How it looks?</h3>
+            <img src="img/wheel-encoder.jpg" alt="Wheel disk">
+          </section>
+          <section>
             <h3>Wheel Encoders</h3>
-              <div>Wheel encoders give the distance moved by each wheel</div>
+              <div>How do we know how far each wheel has moved?</div>
             <img src="img/wheel-encoders.png" alt="Wheel Encoders">
             <div class="text-right">&nbsp;*<font style="font-size: 20px;">Magnus Egerstedt,Control of Mobile Robots,Georgia Institute of Technology</font>
             </div>
@@ -242,9 +273,45 @@
           </section>
 
           <section>
+          <section>
+            <h3>Robot communication control</h3>
+            <img src="img/simiam.png" alt="Sim.I.Am">
+          </section>
+
+          <section>
+            <h3>Alternative simulator</h3>
+            <img src="img/pysimiam.png" alt="Pysimiam">
+          </section>
+
+          <section>
+            <h3>Pysimiam with Arduino</h3>
+            <img src="img/pysimiam_js.png" alt="Pysimiam wit Arduino">
+          </section>
+          </section>
+          
+          <section>
+            <h3>Challenges</h3>
+            <ul>
+              <li>Testing on real hardware</li>
+              <li>Bugs location</li>
+              <li>Complex course material</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Further steps</h3>
+            <ul>
+              <li>Calibrate hardware</li>
+              <li>Arduino Yun</li>
+              <li>Obstacles avoidance</li>
+              <li>Sim.I.am.js</li>
+            </ul>
+          </section>
+
+          <section>
             <h3>Resources</h3>
             <ul>
               <li><a href="https://www.coursera.org/course/conrob">Control of Mobile Robots</a></li>
+              <li><a href="http://pysimiam.sourceforge.net/coursera.html">Using PySimiam in Coursera course</a></li>
               <li><a href="http://o-botics.org/">O'Botics</a></li>
               <li><a href="sejoker.github.io/quickbot-slides">Slides</a></li>
               <li><a href="https://github.com/sejoker/quickbot-five">Github repo of Quickbot-Five</a></li>
