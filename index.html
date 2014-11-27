@@ -130,29 +130,22 @@
           </section>
 
           <section>
-          <section>
-            <h3 style="text-transform: none;">First try: Motobot</h3>
-            <img src="img/motobot.JPG" alt="Motobot">
-          </section>
-          <section>
-            <h3>Hardware</h3>
-            <ul>
+            <h2 style="display: table">First try: Motobot</h3>
+            <img src="img/motobot.JPG" alt="Motobot" style="position: absolute; margin-left:300px">
+            <h3>Hardware</h4>
+            <ul style="display: block">
               <li>Arduino Uno</li>
               <li>Motor Shield</li>
               <li>Ultrasonic distance sensor</li>
               <li>Servo</li>
             </ul>
-          </section>
-          <section>
-            <h3>Software</h3>
-            <ul>
+             <h3>Software</h3>
+            <ul style="display: block">
               <li>Johnny-Five</li>
               <li>Standard Firmata</li>
               <li>Naive obstacle avoidance algorithm</li>
             </ul>
           </section>
-          </section>
-
           <section>
             <h3>Coursera</h3>
             <img style="float: right" src="img/coursera.png" alt="Control of Mobile Robots">
@@ -281,6 +274,27 @@
           <section>
             <h3>Alternative simulator</h3>
             <img src="img/pysimiam.png" alt="Pysimiam">
+          </section>
+
+          <section>
+            <h3>Communication interface</h3>
+            <pre>
+              <code>
+    Command Set:
+    ==========================  ===============================================
+    $CHECK*\n                   returns 'Hello from QuickBot'
+    $PWM?*\n                    returns wheel speeds in PWM: [50, -50]\n
+    $PWM=[-100,100]*\n          sets the speed of the robot wheel velocities
+    $ENVAL?*\n                  returns the encoder ticks ``(tl, tr)`` tuple
+    $ENVEL?*\n                  returns the encoder velocities ``(vl, vr)``
+                                tuple
+    $IRVAL?*\n                  returns the 5-tuple raw ADC values of the IR
+                                sensors, e.s [80.0, 251.0, 234.1, 12.1, 21.3]\n
+    $RESET*\n                   resets encoder position to zero
+    $END*\n                     disconnects from socket
+    ==========================  ===============================================
+              </code>
+            </pre>
           </section>
 
           <section>
